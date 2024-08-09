@@ -1,4 +1,4 @@
-# Breakout Game
+# Breakout Game - JavaScript
 
 Welcome to the Breakout Game! This project is a simple implementation of the classic Breakout game using pure JavaScript, HTML, and CSS.
 
@@ -24,7 +24,7 @@ Breakout is a classic arcade game where the player controls a paddle to bounce a
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/breakout-game.git
+    git clone https://github.com/rolandmllo/breakout-js.git
     ```
 2. **Navigate to the project directory:**
     ```bash
