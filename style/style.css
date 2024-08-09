@@ -1,0 +1,145 @@
+@font-face {
+    font-family: PressStart;
+    src: url(font/PressStart2P-Regular.ttf) format('truetype');
+}
+
+* {
+    font-family: PressStart, serif;
+}
+
+html body {
+    background: black;
+    color: white;
+}
+
+.container {
+    background: black linear-gradient(to bottom, #000000, #0b0b0b, #131313, #191919, #1f1f1f);
+}
+
+li {
+    text-align: justify;
+}
+
+#modalCurtain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 6000;
+    height: 100vh;
+    width: 100%;
+}
+
+.modalWindow {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 7000;
+    height: 60%;
+    width: 60%;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: auto;
+}
+
+#modalContent {
+    z-index: 8000;
+    text-align: center; /* Centers the content text */
+    padding: 20px; /* Adds padding inside the modal content for spacing */
+}
+
+#modalContent h2 {
+    font-size: 4vw;
+}
+#modalContent h3 {
+    font-size: 2vw;
+}
+
+input {
+    padding: 10px;
+}
+
+#header {
+    color: white;
+}
+
+.header-text-score {
+    font-size: 3vw;
+}
+
+.header-text-balls {
+    font-size: 2vw;
+}
+
+#gameArea {
+    height: 95%;
+    width: 95%;
+}
+
+.border {
+    border: 1px solid deepskyblue;
+}
+
+.brick {
+    border: 0 solid;
+    border-radius: 7% / 40%;
+    background: black;
+}
+
+.paddle {
+    border: 0 solid;
+    border-radius: 7% / 40%;
+    background: white;
+}
+
+.ball {
+    border: 0 solid;
+    border-radius: 50%;
+    background: white;
+}
+
+#controls {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    margin: 40px auto 80px auto;
+}
+
+#moveLeft, #moveRight {
+    margin: 0 20px 20px 0;
+}
+
+#togglePause {
+    position: relative;
+    z-index: 90001;
+    cursor: pointer;}
+
+@media (max-width: 768px) {
+    #controls {
+        display: block;
+    }
+}
+
+.red {
+    background: red;
+}
+.orange {
+    background: orange;
+}
+.yellow {
+    background: yellow;
+}
+.green {
+    background: green;
+}
+.blue {
+    background: blue;
+}
