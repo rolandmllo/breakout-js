@@ -1,5 +1,5 @@
-import Brain from "./brain.js";
-import UI from "./ui.js";
+import Brain from "./Brain.js";
+import UI from "./UI.js";
 
 function validateIndexHtml() {
     if (document.querySelectorAll("#container").length !== 1) {
